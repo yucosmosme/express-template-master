@@ -1,0 +1,33 @@
+{
+  "development": {
+    "username": "MySQL user 이름",
+    "password": "MySQL password",
+    "database": "접근할 DB 스키마 이름",
+    "host": "RDS 엔드포인트",
+    "port": 3306,
+    "dialect": "mariadb",
+    "pool": {
+      "max": 100,
+      "min": 0,
+      "idle": 10000, 
+      "acquire": 60000 
+    },
+    "operatorAliases": false
+  },
+  "production": {
+    "username": "MySQL user 이름",
+    "password": "MySQL password",
+    "database": "접근할 DB 스키마 이름",
+    "host": "RDS 엔드포인트",
+    "port": 13306,
+    "dialect": "mariadb",
+    "logging": false,
+    "pool": {
+      "max": 100,
+      "min": 0,
+      "idle": 10000, 
+      "acquire": 60000 
+    },
+    "operatorAliases": false
+  }
+}
